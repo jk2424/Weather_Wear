@@ -20,9 +20,9 @@
 //= require loading_screen
 
 $(document).on('turbolinks:load', function(){
-  setTimeout(function(){
+  
     $('.carousel').carousel();
-  }, 2000)
+
 });
 
 $(document).ready(function(){
