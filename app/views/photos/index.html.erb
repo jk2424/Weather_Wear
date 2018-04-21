@@ -1,33 +1,4 @@
-
-
-
-  <tbody>
-    <% @photos.each do |photo| %>
-      <tr>
-        <td><%= photo.title %></td>
-        <td><%= photo.description %></td>
-        <td><%= photo.file %></td>
-        <td><%= link_to 'Show', photo %></td>
-        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-
-    <% if @cur_temp <= 45 %>
-      <div class="carousel cold"></div>
-    <% elsif @cur_temp > 45 && @cur_temp <= 65 %>
-      <div class="carousel chilly"></div>
-    <% elsif @cur_temp > 65 && @cur_temp <= 80 %>
-      <div class="carousel warm"></div>
-    <% else %>
-      <div class="carousel hot"></div>
-
-
-    <% end %>
-
-<h1>Temperature</h1>
-
-
-
+<%= loading_screen %>
 
   <%= @cur_temp%>
 
