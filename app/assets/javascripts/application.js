@@ -24,3 +24,7 @@ $(document).on('turbolinks:load', function(){
     $('.carousel').carousel();
   }, 2000)
 });
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
