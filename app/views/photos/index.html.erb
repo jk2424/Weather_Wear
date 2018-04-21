@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
+<tbody>
 
+<<<<<<< HEAD
 
 
 <!-- <table>
@@ -22,8 +23,22 @@
         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+=======
+    <% if @cur_temp <= 45 %>
+      <div class="carousel cold"></div>
+    <% elsif @cur_temp > 45 && @cur_temp <= 65 %>
+      <div class="carousel chilly"></div>
+    <% elsif @cur_temp > 65 && @cur_temp <= 80 %>
+      <div class="carousel warm"></div>
+    <% else %>
+      <div class="carousel hot"></div>
+
+>>>>>>> 3ffbeacb107b6a328ae35c575faced1b56ec71f3
     <% end %>
+
+
   </tbody>
+<<<<<<< HEAD
 </table> -->
 
 <div class="logo">
@@ -55,6 +70,10 @@
     </div> -->
 
 
-<br>
+
+<h1>Temperature</h1>
+
 
 <!-- <%= link_to 'New Photo', new_photo_path %> -->
+
+  <%= @cur_temp%>
