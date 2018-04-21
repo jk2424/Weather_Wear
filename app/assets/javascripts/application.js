@@ -20,3 +20,7 @@
 $(document).on('turbolinks:load', function(){
   $('.carousel').carousel();
 });
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
