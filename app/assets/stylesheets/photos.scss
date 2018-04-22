@@ -19,10 +19,18 @@ if it's not present, don't show loader */
 	background: url(Webp.net-gifmaker.gif) center no-repeat #fff;
 }
 
-body {
-  	background-image: url("Miami-City-Page.jpg");
-    background-repeat: no-repeat;
-    background-size: 1750px, 719px;
+// .body {
+//   	// background-image: url("Miami-City-Page.jpg");
+//     background-repeat: no-repeat;
+//     background-size: 1750px, 719px;
+// }
+
+.background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 2200px;
+  z-index: -1;
 }
 
 .top_half {
@@ -98,13 +106,12 @@ body {
 //   // background-attachment: fixed;
 // }
 
-
+// Carousel
 .carousel {
   height: 1450px!important;
   bottom: 350px;
 
 }
-
 
 .carousel-item {
   height: 750px!important;
@@ -120,4 +127,16 @@ body {
   width: 770px;
   left: 104px;
   bottom: 100px;
+}
+
+.tab .tabs a.active {
+  color: #ffff;
+}
+
+.tab .tabs a:hover {
+  color: #dfdf;
+}
+
+.tab .tabs a {
+  color: #fbfb;
 }
