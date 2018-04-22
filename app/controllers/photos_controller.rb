@@ -2,7 +2,6 @@ class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
 
-
   def display_img
     @img = Image.find(params[:id])
     send_data(@img.img, :type => @img.filetype, :filename => @img.filename,

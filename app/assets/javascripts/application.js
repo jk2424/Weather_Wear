@@ -18,11 +18,27 @@
 //= require jquery
 //= require jquery_ujs
 //= require loading_screen
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+$(document).ready(function() {
+  $(".se-pre-con").hide();
+  // $('.tabs').tabs();
+
+  $(document).ajaxStart(function(){
+    $(".se-pre-con").show();
+  });
+
+  $(document).ajaxStop(function(){
+
+    $(".se-pre-con").delay(3000).hide(0);
+  });
+});
+
 
 $(document).on('turbolinks:load', function(){
-  
-    $('.carousel').carousel();
-
+  $('.carousel').carousel();
 });
 
 $(document).ready(function(){

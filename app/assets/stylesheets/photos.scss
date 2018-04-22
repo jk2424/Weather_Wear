@@ -2,6 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader {
+  // display: block; position: absolute; top: 0; 
+}
+.loading_screen {
+	position: fixed;
+	// left: 0px;
+	// top: 0px;
+	width: 100%;
+	height: 100%;
+	// z-index: 9999;
+	background: url(Webp.net-gifmaker.gif) center no-repeat #fff;
+}
 
 body {
   	background-image: url("Miami-City-Page.jpg");
