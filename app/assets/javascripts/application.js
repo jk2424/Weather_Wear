@@ -20,11 +20,12 @@
 //= require loading_screen
 
 $(document).on('turbolinks:load', function(){
-  
+
     $('.carousel').carousel();
-
-});
-
-$(document).ready(function(){
-  $('.tabs').tabs();
+    $('.tabs').tabs();
+//     $( ".tabs" ).click(function() {
+//       $(".M").show(".Women");
+//       $(".M").hide(".Men");
+//
+// });
 });
