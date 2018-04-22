@@ -21,7 +21,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
-<<<<<<< HEAD
+
 
 $(document).ready(function() {
   $(".se-pre-con").hide();
@@ -41,9 +41,9 @@ $(document).ready(function() {
 $(document).on('turbolinks:load', function(){
   $('.carousel').carousel();
 });
-=======
+
 $(document).on('turbolinks:load', function(){
->>>>>>> 604f23424b870df58891b32dbd9401ec5b9e8e80
+
 
     $('.carousel').carousel();
     $('.tabs').tabs();
